@@ -242,8 +242,9 @@ button {
 }
 
 button:focus {
-  outline: 1px dotted;
-  outline: 5px auto -webkit-focus-ring-color;
+  outline: 1px solid #d8ae04;
+  /* outline: 1px solid #12324c; */
+  /* outline: 5px auto -webkit-focus-ring-color; */
 }
 
 input,
@@ -2994,9 +2995,11 @@ input[type=button].btn-block {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
-  color: #212529;
+  /* color: #212529; */
+  color: transparent;
   text-align: left;
   list-style: none;
+  /* background-color: #fff; */
   background-color: #fff;
   background-clip: padding-box;
   border: 1px solid rgba(0, 0, 0, 0.15);
@@ -3142,7 +3145,7 @@ input[type=button].btn-block {
   height: 0;
   margin: 0.5rem 0;
   overflow: hidden;
-  border-top: 1px solid #e9ecef;
+  /* border-top: 1px solid #e9ecef; */
 }
 
 .dropdown-item {
@@ -3151,14 +3154,15 @@ input[type=button].btn-block {
   padding: 0.25rem 1.5rem;
   clear: both;
   font-weight: 400;
-  color: #212529;
+  color: #d8ae04;
+  /* color: #d8ae04 ; */
   text-align: inherit;
   white-space: nowrap;
   background-color: transparent;
   border: 0;
 }
 .dropdown-item:hover, .dropdown-item:focus {
-  color: #16181b;
+  color: #12324c;
   text-decoration: none;
   background-color: #f8f9fa;
 }
@@ -3919,7 +3923,7 @@ input[type=button].btn-block {
 }
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
-  color: #495057;
+  /* color: #495057; */
   background-color: #fff;
   border-color: #dee2e6 #dee2e6 #fff;
 }
@@ -4282,7 +4286,7 @@ input[type=button].btn-block {
   color: rgba(0, 0, 0, 0.9);
 }
 .navbar-light .navbar-text a:hover, .navbar-light .navbar-text a:focus {
-  color: rgba(0, 0, 0, 0.9);
+  color: red;
 }
 
 .navbar-dark .navbar-brand {
@@ -6159,7 +6163,7 @@ button.bg-light:focus {
 a.bg-dark:hover, a.bg-dark:focus,
 button.bg-dark:hover,
 button.bg-dark:focus {
-  background-color: #1d2124 !important;
+  background-color: #d8ae04 !important;
 }
 
 .bg-white {
@@ -10060,16 +10064,20 @@ img::-moz-selection {
 #mainNav {
   padding-top: 1rem;
   padding-bottom: 1rem;
-  background-color: #212529;
+  /* background-color: #212529; */
+  background-color: #ffffff;
 }
 #mainNav .navbar-toggler {
   padding: 0.75rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 0.75rem;
-  color: #fff;
+  /* color: #fff; */
+  color: #d8ae04;
   text-transform: uppercase;
-  background-color: #d8ae04;
-  border: 0;
+  /* background-color: #d8ae04; */
+  background-color: #fff;
+  /* border: 1px solid #d8ae04 ; */
+  border: 1px solid #fff;
 }
 #mainNav .navbar-brand {
   color: #d8ae04;
@@ -10089,7 +10097,8 @@ img::-moz-selection {
   letter-spacing: 0.04em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-  color: #d8ae04;
+  /* color: #d8ae04; */
+  color: #12324c;
 }
 
 @media (min-width: 992px) {
@@ -10507,7 +10516,6 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .p {
     display: block;
-  
     margin-block-start: 1em;
     margin-block-end: 1em;
     margin-inline-start: 0px;
@@ -10558,7 +10566,7 @@ li {
   padding: 50px;
 }
 
-.media{
+.videoiframe{
   float:left;
   margin-top: 10px;
   padding-right: 5px;
@@ -10567,8 +10575,6 @@ li {
   border: none;
   display:block;
 }
-
-
 
 @media only screen  and (max-width:767px) {  
   .page-section h2.section-heading{
@@ -10584,14 +10590,22 @@ li {
     font-size: .9rem;
     line-height: 1.5;
   }
-  .media{
+  .videoiframe{
     float:left;
     margin-top: 10px;
     padding-right: 5px;
-    /* width: 100%; */
+    width: 30%; 
     height: 160px;
     border: none;
     display:block;
+  }
+  .dropdown-menu {
+    border: rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+  }
+
+  #mainNav .navbar-toggler {
+    border: 1px solid #fff;
   }
 } 
 
@@ -10611,7 +10625,7 @@ li {
     font-size: .9rem;
     line-height: 1.5;
   } 
-  .media{
+  .videoiframe{
     float:left;
     margin-top: 10px;
     padding-right: 5px;
@@ -10619,6 +10633,14 @@ li {
     height: 160px;
     border: none;
     display:block;
+  }
+  .dropdown-menu {   
+    border: rgba(0, 0, 0, 0.15);
+    border-radius: 0.25rem;
+  }
+
+  #mainNav .navbar-toggler {
+    border: 1px solid #fff;
   }
 }
 
