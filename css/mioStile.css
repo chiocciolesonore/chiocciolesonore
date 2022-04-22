@@ -9915,7 +9915,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 .testi{
   font-family:utopia-std,serif;
-  font-size: 20px;
+  font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.6;
   color: #000000;
@@ -9968,20 +9968,20 @@ li {
 }
 
 @media only screen  and (max-width:767px) {  
- .page-section h2.section-heading{
+  .page-section h2.section-heading{
     font-size: 1em;
     line-height: 1.5;
   } 
   .page-section h1.section-heading{
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 1.5;
-  } 
+  }
   .page-section h3.section-heading{
     font-size: .9rem;   
     line-height: 1.5;
   } 
   .testi{
-    font-size: 16px;
+    font-size: 1.4rem;
     line-height: 1.5;
   }
   .videoiframe{
@@ -10019,7 +10019,7 @@ li {
     line-height: 1.5;
   } 
   .testi{
-    font-size: 16px;
+    font-size: 1.4rem;
     line-height: 1.5;
   }
   .videoiframe{
